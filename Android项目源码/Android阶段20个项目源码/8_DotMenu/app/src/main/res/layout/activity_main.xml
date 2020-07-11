@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/ib_e"
+        style="@style/ManuBtnStyle"
+        android:src="@drawable/e"/>
+
+    <ImageButton
+        android:id="@+id/ib_d"
+        style="@style/ManuBtnStyle"
+        android:src="@drawable/d"/>
+
+    <ImageButton
+        android:id="@+id/ib_c"
+        style="@style/ManuBtnStyle"
+        android:src="@drawable/c"/>
+
+    <ImageButton
+        android:id="@+id/ib_b"
+        style="@style/ManuBtnStyle"
+        android:src="@drawable/b"/>
+
+    <ImageButton
+        android:id="@+id/ib_a"
+        style="@style/ManuBtnStyle"
+        android:src="@drawable/a"/>
+
+</RelativeLayout>

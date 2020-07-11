@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PXDNavigationBar">
+        <attr name="pxd_background" format="color"/>
+        <attr name="show_back" format="boolean"/>
+        <attr name="back_title" format="string"/>
+        <attr name="back_position" format="integer"/>
+    </declare-styleable>
+</resources>

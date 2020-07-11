@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--声明在哪个控件上添加属性-->
+    <declare-styleable name="PageController">
+        <attr name="mPadding" format="integer"/>
+        <attr name="resourceID" format="reference|color"/>
+        <attr name="numberOfPages" format="integer"/>
+    </declare-styleable>
+</resources>
+
+
+<!--
+ 自定义属性的步骤
+ 1. 创建一个values资源文件
+ 2. 使用declare-styleable关键字修饰
+ 3. name值为自己定义的类的类名
+ 4. 添加属性 name 和 对应的值的类型 format
+    Interger整数
+    Fraction 比例 50%
+    Reference 引用自己的资源文件drawable colors strings styels
+
+ xml中使用
+ app:mPadding="20"
+
+ 控件中获取xml中设置的属性值
+ context.obtainStyledAttributes
+ 通过TypedArray对应的get方法获取属性对应的值
+
+-->

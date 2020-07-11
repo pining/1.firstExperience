@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WaveView">
+        <attr name="lineColor" format="integer|color|reference"/>
+        <attr name="lineSize" format="integer"/>
+        <attr name="waveLength" format="integer"/>
+        <attr name="waveCrest" format="integer"/>
+    </declare-styleable>
+</resources>

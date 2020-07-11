@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--<echang.pxd.a14waveloading.WaveView-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="300dp"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--app:lineColor="#fff"-->
+        <!--app:lineSize="5"-->
+        <!--app:waveLength="200"-->
+        <!--app:waveCrest="60"/>-->
+
+    <!--<echang.pxd.a14waveloading.CircleView-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="300dp" />-->
+
+    <echang.pxd.a14waveloading.WaveLoadingView
+        android:id="@+id/load"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+    </echang.pxd.a14waveloading.WaveLoadingView>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

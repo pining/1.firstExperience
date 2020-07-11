@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/operation"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--滑动条-->
+        <echang.pxd.a16drawboard.Slider
+            android:id="@+id/slider"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+
+        <!--画板-->
+        <echang.pxd.a16drawboard.DrawBoardView
+            android:id="@+id/board"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toRightOf="@id/slider"
+            app:layout_constraintRight_toLeftOf="@id/color"/>
+
+        <!--选颜色-->
+        <LinearLayout
+            android:id="@+id/color"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorAccent"
+                android:onClick="choiceColor"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="choiceColor"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#000"
+                android:onClick="choiceColor"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#e52"
+                android:onClick="choiceColor"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/operation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#f00"
+        android:gravity="center">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="撤销"
+            android:onClick="goBack"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="清空"
+            android:onClick="clear"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="橡皮擦"
+            android:onClick="eraser"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="上一步"
+            android:onClick="lastStep"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:onClick="save"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
